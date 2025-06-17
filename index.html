@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheather-app</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="app">
+        <div>
+            <div id="searshing">
+                <input class="choseCity" id="choseCity" placeholder="search by City">
+                <button onclick="const cityName = document.getElementById('choseCity').value; getWather(cityName)" class="submitTheCity" id="submitTheCity"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+
+        <div id="info">
+            <p id="date"></p>
+            <h3 id="city"></h3>
+        </div>
+
+        <div id="tempImage">
+
+        </div>
+
+        <div id="description"></div>
+
+        <div id="temp"></div>
+
+        <div id="extraInfo">
+            <div id="col">
+              <h5>Highs</h5>
+              <p id="tempMax"></p>
+            </div>
+            <div id="col">
+              <h5>Lows</h5>
+              <p id="lowspMax"></p>
+            </div>
+          </div>          
+        </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>

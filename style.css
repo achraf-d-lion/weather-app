@@ -1,0 +1,179 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  #app {
+    background: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    padding: 30px;
+    max-width: 400px;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Search Bar */
+  #searshing {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .choseCity {
+    flex: 1;
+    padding: 10px 15px;
+    border-radius: 12px;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    transition: 0.3s ease;
+  }
+  
+  .choseCity::placeholder {
+    color: #ccc;
+  }
+  
+  .choseCity:focus {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .submitTheCity {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 12px;
+    background: #ffffff30;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .submitTheCity:hover {
+    background: #ffffff50;
+  }
+  
+  /* Weather Info */
+  #info {
+    text-align: center;
+  }
+  
+  #date {
+    font-size: 0.9rem;
+    color: #e0e0e0;
+  }
+  
+  #city {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-top: 8px;
+  }
+  
+  /* Temperature */
+  #temp {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  
+  /* Extra Info Cards */
+  #extraInfo {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  #col {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  #col h5 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #ddd;
+  }
+  
+  #col p {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  
+
+  /* Container holding Highs and Lows side by side */
+#extraInfo {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* space between the two columns */
+    margin-top: 10px;
+  }
+  
+  /* Each column with vertical layout */
+  #col {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px 15px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Heading (Highs / Lows) */
+  #col h5 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: #ddd;
+    font-weight: 600;
+  }
+  
+  /* The temperature value */
+  #col p {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: white;
+    }
+  
+
+    #description {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #tempImage img {
+        display: block;
+        margin: 0 auto;
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+    }
+
+    #description {
+        font-size: 1.2rem;
+        color: white;
+        margin-top: 10px;
+    }
